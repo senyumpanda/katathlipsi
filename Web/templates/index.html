@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href={{ url_for('static', filename='/css/output.css') }} type="text/css"> -->
+    <!-- <link rel="stylesheet" href={{ url_for('static', filename='/css/add.css') }} type="text/css"> -->
+    <link rel="stylesheet" href='../static/css/output.css'type="text/css">
+    <link rel="stylesheet" href='../static/css/add.css'type="text/css">
+    <title>InDEP</title>
+</head>
+<body class="hack">
+
+    <!-- Load Page -->
+    <div class="load-page kontol w-full min-h-screen flex justify-center items-center flex-col absolute bg-white">
+        <div class="teks-load text-[#0AC0F7] mb-5">
+            <h1 class="text-3xl tracking-wide italic">Memuat...</h1>
+        </div>
+
+        <div class="bar-load w-full h-auto flex justify-center items-center">
+            <div class="bar-line p-[0.15rem] w-[60%] h-5 border-2 border-solid border-[#0AC0F7] rounded-2xl">
+                <div class="line h-3 rounded-lg bg-[#0AC0F7] animate-load"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="konten grid grid-cols-12 h-screen">
+
+        <!-- Menu -->
+        <div class="menu col-start-1 col-end-1 inline-block h-screen">
+            <div class="bagian-menu inline-block h-screen">
+                <div class="tombol-menu flex items-center h-screen">
+                    <div class="pilihan-menu">
+                        <ul>
+                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="beranda">
+                                <a href="index.html">
+                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_beranda" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="64px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                        <g>
+                                            <g id="home">
+                                            <polygon points="204,471.75 204,318.75 306,318.75 306,471.75 433.5,471.75 433.5,267.75 510,267.75 255,38.25 0,267.75 
+                                            76.5,267.75 76.5,471.75 		"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="tes">
+                                <a href="tes_indikasi.html">
+                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_tes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
+                                    <g>
+                                        <path d="M45.386,0.004C19.983,0.344-0.333,21.215,0.005,46.619c0.34,25.393,21.209,45.715,46.611,45.377
+                                            c25.398-0.342,45.718-21.213,45.38-46.615C91.656,19.986,70.786-0.335,45.386,0.004z M45.25,74l-0.254-0.004
+                                            c-3.912-0.116-6.67-2.998-6.559-6.852c0.109-3.788,2.934-6.538,6.717-6.538l0.227,0.004c4.021,0.119,6.748,2.972,6.635,6.937
+                                            C51.904,71.346,49.123,74,45.25,74z M61.705,41.341c-0.92,1.307-2.943,2.93-5.492,4.916l-2.807,1.938
+                                            c-1.541,1.198-2.471,2.325-2.82,3.434c-0.275,0.873-0.41,1.104-0.434,2.88l-0.004,0.451H39.43l0.031-0.907
+                                            c0.131-3.728,0.223-5.921,1.768-7.733c2.424-2.846,7.771-6.289,7.998-6.435c0.766-0.577,1.412-1.234,1.893-1.936
+                                            c1.125-1.551,1.623-2.772,1.623-3.972c0-1.665-0.494-3.205-1.471-4.576c-0.939-1.323-2.723-1.993-5.303-1.993
+                                            c-2.559,0-4.311,0.812-5.359,2.478c-1.078,1.713-1.623,3.512-1.623,5.35v0.457H27.936l0.02-0.477
+                                            c0.285-6.769,2.701-11.643,7.178-14.487C37.947,18.918,41.447,18,45.531,18c5.346,0,9.859,1.299,13.412,3.861
+                                            c3.6,2.596,5.426,6.484,5.426,11.556C64.369,36.254,63.473,38.919,61.705,41.341z"/>
+                                    </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="chatbot">
+                                <a href="chatbot.html">
+                                    <svg enable-background="new 0 0 64 64" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_chatbot" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g>
+                                            <path d="M38.501,7.69c-10.944,0-19.815,8.871-19.815,19.816c0,10.859,8.736,19.673,19.562,19.809v8.43l13.54-13.539   c4.01-3.626,6.53-8.869,6.53-14.7C58.316,16.561,49.444,7.69,38.501,7.69z"/>
+                                            <path d="M21.882,46.654v-2.405l-1.975-0.024c-5.638-0.07-10.224-4.714-10.224-10.353c0-4.645,3.073-8.585,7.292-9.894   c0.245-1.498,0.644-2.945,1.179-4.325C11.128,20.58,5.683,26.595,5.683,33.871c0,7.146,5.315,13.141,12.199,14.19v8.248   l9.871-9.871c-1.181-0.676-2.292-1.456-3.323-2.332L21.882,46.654z"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="anggotaKelompok">
+                                <a href="group.html">
+                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_anggotaKelompok" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" viewBox="0 0 85.988 85.987" style="enable-background:new 0 0 85.988 85.987;"
+                                        xml:space="preserve">
+                                        <g>
+                                            <path d="M77.993,30.884c-2.692,0-4.878,2.185-4.878,4.868c0,2.685,2.186,4.867,4.878,4.867
+                                                c2.683,0,4.867-2.183,4.867-4.867C82.86,33.069,80.675,30.884,77.993,30.884z M8.005,30.884c-2.692,0-4.878,2.185-4.878,4.868
+                                                c0,2.685,2.186,4.867,4.878,4.867c2.685,0,4.87-2.183,4.87-4.867C12.875,33.069,10.69,30.884,8.005,30.884z M63.504,22.03
+                                                c-3.997,0-7.239,3.25-7.239,7.25c0,3.992,3.242,7.236,7.239,7.236c3.998,0,7.25-3.244,7.25-7.236
+                                                C70.754,25.284,67.502,22.03,63.504,22.03z M85.988,66.088h-8.254V50.896c0-2.61-0.767-5.033-1.999-7.146
+                                                c0.726-0.212,1.471-0.363,2.258-0.363c4.401,0,7.995,3.594,7.995,8.006V66.088z M22.483,22.03c-4,0-7.25,3.25-7.25,7.25
+                                                c0,3.992,3.25,7.236,7.25,7.236c3.987,0,7.237-3.244,7.237-7.236C29.72,25.284,26.471,22.03,22.483,22.03z M8.005,43.387
+                                                c0.787,0,1.522,0.15,2.25,0.363c-1.245,2.113-1.999,4.536-1.999,7.146v15.192H0V51.393C0,46.98,3.596,43.387,8.005,43.387z
+                                                M42.986,7.555c-5.9,0-10.71,4.805-10.71,10.711c0,5.905,4.805,10.716,10.71,10.716c5.906,0,10.717-4.811,10.717-10.716
+                                                C53.708,12.359,48.892,7.555,42.986,7.555z M75.083,71.742H62.438V48.627c0-3.179-0.839-6.136-2.195-8.787
+                                                c1.035-0.306,2.123-0.523,3.262-0.523c6.38,0,11.578,5.188,11.578,11.579V71.742z M23.537,48.627v23.115H10.908V50.896
+                                                c0-6.385,5.191-11.579,11.581-11.579c1.139,0,2.216,0.217,3.249,0.523C24.381,42.491,23.537,45.448,23.537,48.627z M26.188,78.433
+                                                h33.598V48.627c0-9.264-7.539-16.798-16.801-16.798c-9.269,0-16.797,7.534-16.797,16.798V78.433z"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-span-1"></div>
+
+        <!-- Beranda -->
+        <div class="beranda col-start-3 col-end-12 block">
+            <div class="konten-beranda pt-16">
+                <div class="bagian-konten-beranda">
+                    <div class="judul-beranda">
+                        <h1 class='teks-blink-beranda text-[5.25rem] text-[#0AC0F7] text-center w-max mx-auto'>Depression.</h1>
+                    </div>
+                    
+                    <div class="penjelasan-beranda mt-12 px-5">
+                        <p class="text-[#0AC0F7] text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur erat et ipsum blandit gravida. Phasellus lacus sapien, ultricies sed odio et, tristique tincidunt nulla. Curabitur consequat dignissim risus at porttitor. Nunc eget varius odio. Fusce quis dui sed quam finibus consequat eget sed tortor. Aliquam id interdum sapien, eget vulputate nisl. Fusce egestas, tellus eget placerat lacinia, libero arcu aliquet purus, et egestas nulla nunc sed ante.
+                        </p>
+                        <br>
+                        <p class="text-[#0AC0F7] text-justify">
+                            Vivamus hendrerit varius diam a tincidunt. Proin lectus leo, porta egestas maximus ac, lacinia id mi. Quisque quis commodo turpis, eget elementum odio. Donec suscipit justo erat, et euismod odio pellentesque ac. Nam nunc diam, pharetra at mattis quis, tincidunt non velit. Morbi at risus sed nibh scelerisque posuere id porttitor justo. Suspendisse potenti. Aenean sit amet vehicula nisi. Phasellus mollis felis in nisi laoreet, vitae vulputate mi pellentesque. Phasellus quis nisl metus. Aenean vulputate ex leo, nec mattis urna tincidunt eu. Vestibulum maximus ligula sem, quis convallis ipsum feugiat vitae. Aliquam in venenatis odio, a volutpat ligula.
+                        </p>
+                    </div>
+
+                    <div class="deskripsi-gambar-beranda mt-12">
+                        <img class="m-auto" src="../static/img/depression.jpg"  alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/beranda.js"></script>
+
+</body>
+</html>

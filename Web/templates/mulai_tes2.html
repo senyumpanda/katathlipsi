@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href={{ url_for('static', filename='/css/output.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/add.css') }} type="text/css"> -->
+    <link rel="stylesheet" href='../static/css/output.css'type="text/css">
+    <link rel="stylesheet" href='../static/css/add.css'type="text/css">
+    <title>InDEP</title>
+</head>
+<body class="hack">
+
+    <div class="konten grid grid-cols-12 h-screen">
+
+        <!-- Soal Tes 1 -->
+        <div class="beranda col-start-3 col-end-10 block">
+
+            <div class="judul-soal-tes mt-32">
+                <h1 class="font-bold text-[4rem]">Pertanyaan 2</h1>
+            </div>
+
+            <div class="penjelasan-soal-tes w-100 mt-20">
+                <h5 class="text-[2rem]">
+                    Apa sudah menikah / pernah menikah atau belum ?
+                </h5>
+            </div>
+
+            <div class="jawaban-soal-tes mt-10">
+                <div class="pilihan-jawaban-soal-tes">
+
+                    <div class="grup-jawaban-soal-tes">
+
+                        <label for="" class="point-jawaban-soal-tes text-3xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                            <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-16" type="radio" value="ya" name="jawaban-1">
+                            Ya 
+                            <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                        </label>
+
+                        <br><br>
+
+                        <label for="" class="point-jawaban-soal-tes text-3xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                            <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="tidak" name="jawaban-1">
+                            Tidak
+                            <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="kembali-tes relative mx-auto">
+            <div class="tombol-kembali-tes absolute bottom-32 flex align-items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
+                <a href="mulai_tes1.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" viewBox="0 0 256 256" xml:space="preserve">
+
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <polygon points="20.48,45 59.75,90 69.52,81.48 37.69,45 69.52,8.52 59.75,0 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #0AC0F7; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                        </g>
+                        </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tombol Lanjut -->
+        <div class="lanjut-tes relative mx-auto">
+            <div class="tombol-lanjut-tes absolute bottom-32 flex align-items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
+                <a href="mulai_tes3.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" viewBox="0 0 256 256" xml:space="preserve">
+
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <polygon points="69.52,45 30.25,90 20.48,81.48 52.31,45 20.48,8.52 30.25,0 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #0AC0F7; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                        </g>
+                        </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
