@@ -1,0 +1,214 @@
+{
+    "teks": [
+        {
+            "tag": "salam",
+            "patterns": [
+                "Hai",
+                "hai.",
+                "hai boi",
+                "hai bro",
+                "Hi",
+                "Hi.",
+                "Hi bro",
+                "Halo",
+                "halo bro",
+                "Selamat Pagi",
+                "Selamat Siang",
+                "Selamat Malam"
+            ],
+            "responses": [
+                "Halo, ada yang bisa saya bantu?",
+                "Halo, selamat datang",
+                "Hai, salam kenal"
+            ]
+        },
+        {
+            "tag": "selesai",
+            "patterns": [
+                "Selamat Tinggal",
+                "Dah",
+                "Dahlah",
+                "Semoga harimu menyenangkan",
+                "Sampai Jumpa Lagi",
+                "Ok bye",
+                "terima kasih",
+                "terima kasih.Makasii",
+                "makasi ya",
+                "makasi ya.",
+                "makasi ya wkwkwk",
+                "makasi ya hehehe",
+                "makasi sarannya",
+                "makasi sarannya."
+            ],
+            "responses": [
+                "Sampai jumpa lagi yaa ^_^",
+                "Semoga harimu menyenangkan! \ud83d\ude01"
+            ]
+        },
+        {
+            "tag": "nama",
+            "patterns": [
+                "nama kamu siapa?",
+                "namamu siapa?",
+                "siapa sih lo?",
+                "kamu siapa?",
+                "kamu sapa?",
+                "nama?"
+            ],
+            "responses": [
+                "Namaku Katathlipsi Bot, salam kenal ya!",
+                "Halo, aku Katathlipsi ^_^!",
+                "Kenalin, aku Katathlipsi ^_^!"
+            ]
+        },
+        {
+            "tag": "pekerjaan",
+            "patterns": [
+                "pekerjaan kamu apa?",
+                "lu kerja apa?",
+                "tugas kamu apa?",
+                "tugas lo ngapain?"
+            ],
+            "responses": [
+                "InDep berusaha membantu kamu dalam mengatasi Depresi ^_^",
+                "Tugas InDep jadi asisten pribade kamu agar kamu terlepas dari depresi ^_^. Silahkan bertanya yaaa ^_^"
+            ]
+        },
+        {
+            "tag": "tentang_depresi",
+            "patterns": [
+                "depresi itu apa?",
+                "emang depresi apa sih?",
+                "wah apa tuh depresi?",
+                "depresi emang apa?",
+                "depresi itu apa sih",
+                "apa depresi",
+                "apa itu depresi?",
+                "apa itu depresi",
+                "depresi itu apa",
+                "depresi apa"
+            ],
+            "responses": [
+                "Depresi merupakan sebuah penyakit yang ditandai dengan rasa sedih yang berkepanjangan dan <br> kehilangan minat terhadap kegiatan-kegiatan yang biasanya kita lakukan dengan senang hati."
+            ]
+        },
+        {
+            "tag": "gejala_depresi",
+            "patterns": [
+                "apa aja sih gejala depresi?",
+                "Apa gejala depresi",
+                "depresi gejalagejala depresi",
+                "bagaimana gejala depresi",
+                "depresi biasanya gejalanya apa",
+                "depresi biasanya gejalanya apa?",
+                "depresi umumnya gejalanya apa",
+                "depresi umumnya gejalanya apa?",
+		    "gejala.",
+		    "gejala",
+		    "gejala?"
+            ],
+            "responses": [
+                "+-- [ GEJALA ] --+<br>                    1. Merasa cemas dan khawatir yang berlebihan<br>                    2. Mudah sensitif dan marah serta mudah menangis<br>                    3. Menjadi apatis terhadap lingkungan sekitar<br>                    4. Sulit berkonsentrasi, berpikir, dan mengambil keputusan<br>                    5. Sering merasa kelelahan dan tidak bertenaga<br>                    6. Merasa pusing atau nyeri yang tidak jelas penyebabnya<br>                    7. Berat badan turun atau malah naik drastis<br>                    8. Gerak tubuh dan cara bicara yang lebih lambat dari biasanya<br>        "
+            ]
+        },
+        {
+            "tag": "penanggulangan_depresi",
+            "patterns": [
+                "ngatasinya gimana sih?",
+                "trus gimana ya?",
+                "trus gimana.",
+                "trus gimana",
+                "lalu harus gimana ya?",
+                "harus gimana",
+                "harus gimana.harus gimana ?",
+                "harus bagaimana",
+                "harus bagaimana.",
+                "harus bagaimana?",
+                "harus bagaimana ya?",
+                "harus bagaimana.ada cara ngatasi ga?",
+                "ada cara ga?",
+                "ada cara ga",
+                "ada cara untuk mengatasinya engga?",
+                "gimana  ngatasinya?",
+                "bagaimana cara mengatasinya tuh?",
+                "cara mengatasinya",
+                "cara mengatasinya?",
+                "cara mengatasinya!",
+                "solusi depresi",
+                "solusi depresi.",
+                "solusi",
+                "solusi.",
+                "solusinya",
+                "atasi depresi",
+                "atasi depresi.atasi",
+                "atasi."
+            ],
+            "responses": [
+                "+-- [ PENANGGULANGAN ] --+<br>                    1. Melakukan rutinitas<br>                    2. Menetapkan tujuan<br>                    3. Melakukan olahraga<br>                    4. Makan sehat<br>                    5. Tidur yang cukup<br>                    6. Membentuk pikiran positif<br>                    7. Hindari penyalahgunaan zat<br>                    8. Konsultasi dengan profesional<br>        "
+            ]
+        },
+        {
+            "tag": "curhat_tentang_orangtua",
+            "patterns": [
+                "Saya merasa telah mengecewakan orang tua saya",
+                "Saya sering mengecewakan orang tua saya",
+                "aku merasa sering berbohong kepada orang tua",
+                "aku sering membentak orang tua",
+                "aku seringkali mempermalukan orang tua",
+                "aku merasa tak pantas menjadi seorang anak"
+            ],
+            "responses": [
+                "Orang tuamu akan selalu mendukungmu dan mencintaimu apapun kondisimu ^_^"
+            ]
+        },
+        {
+            "tag": "curhat_tentang_diri_sendiri1",
+            "patterns": [
+                "Saya merasa stres akhir-akhir ini",
+                "Aku membenci diriku sendiri!",
+                "Aku membenci diriku sendiri.",
+                "Aku benci kalah.",
+                "Saya pikir saya kehilangan akal",
+                "Saya pikir saya kehilangan akal.",
+                "Saya stres.",
+                "Saya stres",
+                "Saya tidak akan pernah berhasil dalam hidup",
+                "Saya tidak akan pernah berhasil dalam hidup.",
+                "Aku sedih.",
+                "Aku sedih",
+                "Aku mengecewakan semua orang",
+                "Aku mengecewakan semua orang.",
+                "Saya tidak bisa melakukan ini lagi.",
+                "Saya tidak bisa melakukan ini lagi"
+            ],
+            "responses": [
+                "Tetap Semangat Yaaa Kawann ^_^, Jangan Menyerahhh. InDep yakin kamu pasti bisa menghadapinyaaa \ud83d\ude0a"
+            ]
+        },
+        {
+            "tag": "curhat_tentang_diri_sendiri2",
+            "patterns": [
+                "saya ingin bunuh diri",
+                "Saya takut gagal",
+                "Saya kesepian!",
+                "Saya kesepian :(",
+                "Saya kesepian.Tidak ada yang menyukaiku!",
+                "Tidak ada yang menyukaiku :(",
+                "Tidak ada yang menyukaiku.Saya pikir saya jelek!",
+                "Saya pikir saya jelek.",
+                "Saya berharap saya lebih baik dari mereka",
+                "Saya berharap saya lebih baik dari mereka.",
+                "Saya adalah korban bullying.",
+                "Saya adalah korban bullying",
+                "Saya ingin berhenti",
+                "Saya ingin berhenti hidup",
+                "Saya ingin berhenti hidup.",
+                "Waktuku telah tiba.",
+                "Waktuku telah tiba"
+            ],
+            "responses": [
+                "Tolong jangan katakan seperti itu :(, InDep yakin kamu kuat dan tidak pantang menyerah \u2764\ufe0f\u2764\ufe0f"
+            ]
+        }
+    ]
+}

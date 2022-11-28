@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/output.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/add.css') }} type="text/css">
+    <!-- <link rel="stylesheet" href='../static/css/output.css'type="text/css">
+    <link rel="stylesheet" href='../static/css/add.css'type="text/css">
+    <script src="../static/js/jquery_3.6.0.min.js" type="text/javascript"></script> -->
+    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} type="text/javascript"></script>
+    <title>Katathlipsi</title>
+</head>
+<body class="hack">
+    
+    <form method="POST">
+
+        <div class="konten grid grid-cols-12 h-2/5" id="loop">
+            <!-- Soal Tes 1 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 1</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Jenis Kelamin Anda ...
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-20" type="radio" value="0" name="gender">
+                                Pria 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="1" name="gender">
+                                Wanita
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pemberitahuan-soal-tes mt-7">
+                    <span class="text-red-700 text-md"></span>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 2 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 2</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Apa sudah menikah / pernah menikah atau belum ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-16" type="radio" value="1" name="married">
+                                Ya 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="0" name="married">
+                                Tidak
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 3 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 3</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Apa Pendidikan Terakhir Anda ? 
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-48" type="radio" value="6" name="education">
+                                Sekolah Dasar 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-[27rem]" type="radio" value="9" name="education">
+                                Sekolah Menengah Pertama (SMP)
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-96" type="radio" value="12" name="education">
+                                Sekolah Menengah Atas (SMA)
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-60" type="radio" value="15" name="education">
+                                Strata 1 (S1)
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 4 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 4</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Umur Anda sekarang ...
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black relative cursor-pointer">
+                                <input class="w-14 border-2 border-[#0AC0F7] outline-0 active:border-[#0AC0F7] rounded-lg px-3 py-2 focus:ring-0 focus:outline-0 focus:outline-none" type="text" name="age" autocomplete="off">
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pemberitahuan-soal-tes mt-7">
+                    <span class="text-red-700 text-md"></span>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 5 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 5</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Apa Anda sedang menjalankan bisnis ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-16" type="radio" value="1" name="business">
+                                Ya 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="0" name="business">
+                                Tidak
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 6 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 6</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Bagaimana Tipe Pekerjaanmu ? 
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-[31rem]" type="radio" value="0" name="job">
+                                Bekerja secara Penuh Waktu (Full Time)
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-[34rem]" type="radio" value="2" name="job">
+                                Bekerja secara Setengah Waktu (Part-Time)
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-60" type="radio" value="1" name="job">
+                                Tidak Bekerja
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 7 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 7</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Dimanakah Anda sering menghabiskan waktu Anda ? 
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-[21rem]" type="radio" value="0" name="time_place">
+                                Rumah (bersama Orang Tua)
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-52" type="radio" value="1" name="time_place">
+                                Diri Sendiri
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-72" type="radio" value="2" name="time_place">
+                                Asrama Universitas
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 8 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 8</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Berapa banyak waktu yang Anda habiskan untuk Belajar tiap hari ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-36" type="radio" value="0" name="time_consume">
+                                1 - 2 Jam
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-44" type="radio" value="1" name="time_consume">
+                                2 - 4 Jam
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-64" type="radio" value="2" name="time_consume">
+                                Lebih dari 4 Jam
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 9 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 9</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Berapa jumlah barang elektronik / gadgets yang Anda gunakan ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-24" type="radio" value="0" name="count_gadget">
+                                1 - 3
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="1" name="count_gadget">
+                                4 - 6
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-56" type="radio" value="2" name="count_gadget">
+                                Lebih dari 6
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-44" type="radio" value="3" name="count_gadget">
+                                Tidak Ada
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 10 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 10</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Berapa waktu yang Anda habiskan di sosial media per hari ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-36" type="radio" value="0" name="time_social_media">
+                                1 - 2 Jam
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-44" type="radio" value="1" name="time_social_media">
+                                2 - 4 Jam
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-64" type="radio" value="2" name="time_social_media">
+                                Lebih dari 4 Jam
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-[27rem]" type="radio" value="3" name="time_social_media">
+                                Tidak Menggunakan Sosial Media
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 11 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 11</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Apakah Anda sekarang sedang berkeluarga ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-16" type="radio" value="1" name="family">
+                                Ya 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="0" name="family">
+                                Tidak
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 12 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 12</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Apakah Anda saat ini sedang / ingin menjalani pengobatan ?
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-16" type="radio" value="1" name="treatment">
+                                Ya 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="0" name="treatment">
+                                Tidak
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soal Tes 13 -->
+            <div class="beranda col-start-2 col-end-7 block">
+
+                <div class="judul-soal-tes mt-32">
+                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 13</h1>
+                </div>
+
+                <div class="penjelasan-soal-tes w-100 mt-20">
+                    <h5 class="text-[1.2rem]">
+                        Bagaimana Anda mendeskripsikan gangguan yang sering Anda alami <br> saat menjalani aktivitas ... 
+                    </h5>
+                </div>
+
+                <div class="jawaban-soal-tes mt-10">
+                    <div class="pilihan-jawaban-soal-tes">
+
+                        <div class="grup-jawaban-soal-tes">
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-44" type="radio" value="0" name="disruption">
+                                Tidak Pernah 
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="1" name="disruption">
+                                Sering
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-36" type="radio" value="2" name="disruption">
+                                Jarang
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                            <br><br>
+
+                            <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-24 scale-[2] w-44" type="radio" value="3" name="disruption">
+                                Terkadang
+                                <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hasil Tes -->
+            <div class="hasil col-start-8 col-end-12 block">
+                <div class="judul-tes-hasil mt-32">
+                    <h1 class="uppercase font-bold text-[3.5rem] text-center text-[#0AC0F7]">hasil</h1>
+                </div>
+
+                <div id="jawaban-tes">
+
+                </div>
+                
+                <!-- <div class="hasil-jawaban-tes" id="hasil-jawaban-tes">
+                    <h5 class="uppercase font-bold text-[1.5rem] text-center mt-24 underline underline-offset-4">
+                        Anda mengalami depresi
+                    </h5>
+                </div> -->
+    
+                <!-- <div class="saran-hasil-jawaban-tes">
+                    <div class="judul-saran-jawaban-tes mt-20 text-center">
+                        <h3 class="saran text-[1.1rem] hidden">
+                            Saran:
+                        </h3>
+                    </div>
+    
+                    <div class="deskripsi-saran-jawaban-tes mt-12">
+                        <p class="text-[1.2rem] text-center ">
+                            Tetap kuat, ceritamu belum berakhir.
+                        </p>
+                        <br><br>
+                        <p class="text-[1rem] text-center" id="teks-lanjut">
+                            Konsultasikan dengan dokter apabila terdapat gejala yang lebih parah yaaa ^_^
+                        </p>
+                    </div>
+                </div> -->
+    
+                <!-- Kembali ke Halaman Utama -->
+                <div class="kembali-beranda">
+                    <p class="text-[#0AC0F7] text-[1.25rem] text-center mt-14">
+                        <a href={{ url_for('beranda') }} class="hover:underline hover:underline-offset-3 hidden" id="ke-beranda">
+                            Beranda
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <!-- Tombol Kembali <-> Lanjut -->
+        <div class="pagination grid grid-cols-12 h-1/5 content-center">
+            <div class="mt-5 tombol-halaman col-start-6 col-end-8 relative flex justify-between">
+
+                <!-- <div class="tombol-tes tombol-kembali-tes relative -bottom-3/4 flex align-items-center justify-start cursor-pointer transition-all duration-300 ease-in-out hover:translate-x-[-5px] hover:transition-all hover:duration-300 hover:ease-in-out" id="previous-page">
+                    <a href="javascript:void(0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" viewBox="0 0 256 256" xml:space="preserve">
+        
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <polygon points="20.48,45 59.75,90 69.52,81.48 37.69,45 69.52,8.52 59.75,0 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #0AC0F7; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                            </g>
+                            </svg>
+                    </a>
+                </div> -->
+                
+                <!-- Angka Tombol -->
+                <div class="tombol-tes">
+
+                    <ul class="pagination flex justify-around align-items-center">
+                        
+                        <li>
+                            <div class="tombol-kembali-tes relative -bottom-3/4 flex align-items-center justify-start cursor-pointer transition-all duration-500 ease-in-out hover:translate-x-[-5px] hover:transition-all hover:duration-500 hover:ease-in-out" id="previous-page">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" viewBox="0 0 256 256" xml:space="preserve">
+                    
+                                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                            <polygon points="20.48,45 59.75,90 69.52,81.48 37.69,45 69.52,8.52 59.75,0 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #0AC0F7; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                        </g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Angka Tombol -->
+
+                <!-- <div class="tombol-tes tombol-lanjut-tes relative -bottom-3/4 flex align-items-center justify-end cursor-pointer transition-all duration-300 ease-in-out hover:translate-x-[5px] hover:transition-all hover:duration-300 hover:ease-in-out" id="next-page">
+                    <a href="javascript:void(0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" viewBox="0 0 256 256" xml:space="preserve">
+        
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <polygon points="69.52,45 30.25,90 20.48,81.48 52.31,45 20.48,8.52 30.25,0 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #0AC0F7; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                            </g>
+                            </svg>
+                    </a>
+                </div> -->
+
+
+            </div>
+        </div>
+
+    </form>
+
+    <!-- Info -->
+    <!-- <div class="info-pemberitahuan-isi bg-white grid grid-cols-12 min-h-full">
+        <div class="konten-tombol-pemberitahuan px-16 py-4 bg-white shadow-inner shadow-[#0AC0F7] rounded col-start-4 col-end-10">
+            
+            <div class="judul-pemberitahuan-isi">
+                <h1 class="uppercase text-center text-xl text-[#0AC0F7] font-bold">pemberitahuan</h1>
+            </div>
+
+            <div class="info-pemberitahuan-isi mt-10">
+                <p class="text-md text-center">
+                    Mohon Diisi Dulu Yaaa 🥺🥹
+                </p>
+            </div>
+
+            <div class="tombol-selesai-pemberitahuan mt-12 text-center" id="selesai-pemberitahuan">
+                <button class="px-10 py-2 ring-1 ring-[#0AC0F7] rounded-md transition-all duration-300 ease-in-out text-black hover:bg-[#0AC0F7] hover:ring-0 hover:ring-transparent hover:transition-all hover:duration-300 hover:ease-in-out hover:text-white">
+                    <p>Ok</p>
+                </button>
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- <script src="../static/js/tes_mulai.js" type="text/javascript"></script> -->
+    <script src={{ url_for('static', filename='js/tes_mulai.js') }} type="text/javascript"></script>
+
+</body>
+</html>
