@@ -9,12 +9,20 @@
 - Muhammad Andi Azriel Akbar
 - Muhammad Zakin Udin
 
+<br>
+<br>
 
-Cara Menjalankan Aplikasi dengan File Python
+##### Menjalankan Aplikasi dalam Proses Pengembangan
+- flask run
+
+<br>
+
+##### Menjalankan Aplikasi dengan File Python
 - python app.py ('name_file_python'.py)
 
+<br>
 
-Tapi Kalian Dapat Menjalankannya dengan Link dibawah:
+##### Kalian Dapat Menjalankannya dengan Link dibawah:
 
 
 
