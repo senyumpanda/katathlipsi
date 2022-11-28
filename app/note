@@ -1,7 +1,0 @@
-{{ url_for('function_page') }} # for link page to another html
-
-{{ url_for('static', filename='location css or js') }} # for link css or js
-
-
-++++
-- RESPONSIVE BERANDA (BELOM)
