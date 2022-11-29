@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={{ url_for('static', filename='/css/output.css') }} type="text/css">
     <link rel="stylesheet" href={{ url_for('static', filename='/css/add.css') }} type="text/css">
+    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} type="text/javascript"></script>
     <!-- <link rel="stylesheet" href='../static/css/output.css'type="text/css">
     <link rel="stylesheet" href='../static/css/add.css'type="text/css">
     <script src="../static/js/jquery_3.6.0.min.js" type="text/javascript"></script> -->
-    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} type="text/javascript"></script>
     <title>Katathlipsi</title>
 </head>
 <body class="hack">
@@ -18,14 +18,14 @@
 
         <div class="konten grid grid-cols-12 h-2/5" id="loop">
             <!-- Soal Tes 1 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 1</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 1</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Jenis Kelamin Anda ...
                     </h5>
                 </div>
@@ -61,14 +61,14 @@
             </div>
 
             <!-- Soal Tes 2 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 2</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 2</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Apa sudah menikah / pernah menikah atau belum ?
                     </h5>
                 </div>
@@ -79,7 +79,7 @@
                         <div class="grup-jawaban-soal-tes">
 
                             <label for="" class="point-jawaban-soal-tes text-xl font-medium capitalize inline-block align-middle text-black ml-12 relative cursor-pointer">
-                                <input class="cursor-pointer peer opacity-0 absolute top-3 -left-14 scale-[2] w-16" type="radio" value="1" name="married">
+                                <input class="cursor-pointer peer opacity-0 absolute top-3 xl:-left-14 scale-[2] w-16" type="radio" value="1" name="married">
                                 Ya 
                                 <span class="w-7 h-7 border-2 border-solid border-[#0AC0F7] rounded-full block absolute -left-9 top-1 after:w-4 after:h-4 after:bg-[#0AC0F7] after:block after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:scale-0 after:rounded-full after:transition-all after:duration-200 after:ease-in-out after:delay-0 peer-checked:after:scale-100"></span>
                             </label>
@@ -100,14 +100,14 @@
             </div>
 
             <!-- Soal Tes 3 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 3</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 3</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Apa Pendidikan Terakhir Anda ? 
                     </h5>
                 </div>
@@ -155,14 +155,14 @@
             </div>
 
             <!-- Soal Tes 4 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 4</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 4</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Umur Anda sekarang ...
                     </h5>
                 </div>
@@ -188,14 +188,14 @@
             </div>
 
             <!-- Soal Tes 5 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 5</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 5</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Apa Anda sedang menjalankan bisnis ?
                     </h5>
                 </div>
@@ -227,14 +227,14 @@
             </div>
 
             <!-- Soal Tes 6 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 6</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 6</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Bagaimana Tipe Pekerjaanmu ? 
                     </h5>
                 </div>
@@ -274,14 +274,14 @@
             </div>
 
             <!-- Soal Tes 7 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 7</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 7</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Dimanakah Anda sering menghabiskan waktu Anda ? 
                     </h5>
                 </div>
@@ -321,14 +321,14 @@
             </div>
 
             <!-- Soal Tes 8 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 8</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 8</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Berapa banyak waktu yang Anda habiskan untuk Belajar tiap hari ?
                     </h5>
                 </div>
@@ -368,14 +368,14 @@
             </div>
 
             <!-- Soal Tes 9 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 9</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 9</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Berapa jumlah barang elektronik / gadgets yang Anda gunakan ?
                     </h5>
                 </div>
@@ -423,14 +423,14 @@
             </div>
 
             <!-- Soal Tes 10 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 10</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 10</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Berapa waktu yang Anda habiskan di sosial media per hari ?
                     </h5>
                 </div>
@@ -478,14 +478,14 @@
             </div>
 
             <!-- Soal Tes 11 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 11</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 11</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Apakah Anda sekarang sedang berkeluarga ?
                     </h5>
                 </div>
@@ -517,14 +517,14 @@
             </div>
 
             <!-- Soal Tes 12 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 12</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 12</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Apakah Anda saat ini sedang / ingin menjalani pengobatan ?
                     </h5>
                 </div>
@@ -556,14 +556,14 @@
             </div>
 
             <!-- Soal Tes 13 -->
-            <div class="beranda col-start-2 col-end-7 block">
+            <div class="beranda col-start-2 col-end-10 xl:col-start-2 xl:col-end-7 block">
 
-                <div class="judul-soal-tes mt-32">
-                    <h1 class="font-bold text-[3.5rem]">Pertanyaan 13</h1>
+                <div class="judul-soal-tes mt-16 xl:mt-32">
+                    <h1 class="font-bold text-[2.5rem] xl:text-[3.5rem]">Pertanyaan 13</h1>
                 </div>
 
                 <div class="penjelasan-soal-tes w-100 mt-20">
-                    <h5 class="text-[1.2rem]">
+                    <h5 class="text-base xl:text-[1.2rem]">
                         Bagaimana Anda mendeskripsikan gangguan yang sering Anda alami <br> saat menjalani aktivitas ... 
                     </h5>
                 </div>
@@ -611,9 +611,9 @@
             </div>
 
             <!-- Hasil Tes -->
-            <div class="hasil col-start-8 col-end-12 block">
+            <div class="hasil col-start-2 col-end-10 xl:col-start-8 xl:col-end-12 block">
                 <div class="judul-tes-hasil mt-32">
-                    <h1 class="uppercase font-bold text-[3.5rem] text-center text-[#0AC0F7]">hasil</h1>
+                    <h1 class="uppercase font-bold text-[3.5rem] text-center text-[#0AC0F7] ml-24 md:ml-32 xl:ml-0">hasil</h1>
                 </div>
 
                 <div id="jawaban-tes">
@@ -646,7 +646,7 @@
     
                 <!-- Kembali ke Halaman Utama -->
                 <div class="kembali-beranda">
-                    <p class="text-[#0AC0F7] text-[1.25rem] text-center mt-14">
+                    <p class="text-[#0AC0F7] text-[0.9rem] xl:text-[1.25rem] text-center mt-14">
                         <a href={{ url_for('beranda') }} class="hover:underline hover:underline-offset-3 hidden" id="ke-beranda">
                             Beranda
                         </a>
@@ -658,7 +658,7 @@
 
         
         <!-- Tombol Kembali <-> Lanjut -->
-        <div class="pagination grid grid-cols-12 h-1/5 content-center">
+        <div class="pagination grid grid-cols-12 h-1/5 content-center absolute top-72 -right-60 xl:static">
             <div class="mt-5 tombol-halaman col-start-6 col-end-8 relative flex justify-between">
 
                 <!-- <div class="tombol-tes tombol-kembali-tes relative -bottom-3/4 flex align-items-center justify-start cursor-pointer transition-all duration-300 ease-in-out hover:translate-x-[-5px] hover:transition-all hover:duration-300 hover:ease-in-out" id="previous-page">

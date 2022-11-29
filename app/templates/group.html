@@ -25,16 +25,16 @@
         </div>
     </div>
 
-    <div class="konten grid grid-cols-12 h-screen">
+    <div class="konten grid grid-cols-12 xl:h-screen">
         <!-- Menu -->
-        <div class="menu col-start-1 col-end-1 inline-block h-screen animate-menuShow">
-            <div class="bagian-menu inline-block h-screen">
-                <div class="tombol-menu flex items-center h-screen">
+        <div class="menu col-start-2 col-end-12 inline-block place-items-center order-2 mx-auto border-b-4 border-b-[#0AC0F7] xl:col-start-1 xl:col-end-1 xl:order-1 xl:border-b-0 xl:h-screen">
+            <div class="bagian-menu inline-block xl:h-screen">
+                <div class="tombol-menu flex items-center xl:h-screen">
                     <div class="pilihan-menu">
-                        <ul>
-                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="beranda">
+                        <ul class="flex flex-row items-center justify-center xl:block xl:flex-col">
+                            <li class="mx-4 my-2 py-2 group transition-all duration-200 ease-linear cursor-pointer lg:mx-6 lg:my-6" id="beranda">
                                 <a href={{ url_for('beranda') }}>
-                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_beranda" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] group-hover:transition-all group-hover:duration-200 group-hover:ease-in-out transition-all duration-200 ease-in-out w-[36px] md:w-[50px] xl:w-[64px]" id="icon_beranda" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     width="64px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
                                         <g>
                                             <g id="home">
@@ -45,9 +45,9 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="tesIndikasi">
+                            <li class="mx-4 my-2 py-2 group transition-all duration-200 ease-linear cursor-pointer lg:mx-6 lg:my-6" id="tesIndikasi">
                                 <a href={{ url_for('tes_indikasi') }}>
-                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_tesIndikasi" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
+                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] group-hover:transition-all group-hover:duration-200 group-hover:ease-in-out transition-all duration-200 ease-in-out w-[36px] md:w-[50px] xl:w-[64px]" id="icon_tesIndikasi" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
                                     <g>
                                         <path d="M45.386,0.004C19.983,0.344-0.333,21.215,0.005,46.619c0.34,25.393,21.209,45.715,46.611,45.377
                                             c25.398-0.342,45.718-21.213,45.38-46.615C91.656,19.986,70.786-0.335,45.386,0.004z M45.25,74l-0.254-0.004
@@ -63,9 +63,9 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="chatbot">
+                            <li class="mx-4 my-2 py-2 group transition-all duration-200 ease-linear cursor-pointer lg:mx-6 lg:my-6" id="chatbot">
                                 <a href={{ url_for('chatbot') }}>
-                                    <svg enable-background="new 0 0 64 64" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_chatbot" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <svg enable-background="new 0 0 64 64" class="fill-[#0AC0F7] group-hover:scale-[1.2] group-hover:transition-all group-hover:duration-200 group-hover:ease-in-out transition-all duration-200 ease-in-out w-[36px] md:w-[50px] xl:w-[64px]" id="icon_chatbot" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g>
                                             <path d="M38.501,7.69c-10.944,0-19.815,8.871-19.815,19.816c0,10.859,8.736,19.673,19.562,19.809v8.43l13.54-13.539   c4.01-3.626,6.53-8.869,6.53-14.7C58.316,16.561,49.444,7.69,38.501,7.69z"/>
                                             <path d="M21.882,46.654v-2.405l-1.975-0.024c-5.638-0.07-10.224-4.714-10.224-10.353c0-4.645,3.073-8.585,7.292-9.894   c0.245-1.498,0.644-2.945,1.179-4.325C11.128,20.58,5.683,26.595,5.683,33.871c0,7.146,5.315,13.141,12.199,14.19v8.248   l9.871-9.871c-1.181-0.676-2.292-1.456-3.323-2.332L21.882,46.654z"/>
@@ -73,9 +73,9 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="m-6 py-2 group transition-all duration-200 ease-linear cursor-pointer" id="anggotaKelompok">
+                            <li class="mx-4 my-2 py-2 group transition-all duration-200 ease-linear cursor-pointer lg:mx-6 lg:my-6" id="anggotaKelompok">
                                 <a href={{ url_for('kelompok') }}>
-                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] transition-all duration-200 ease-linear" id="icon_anggotaKelompok" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" viewBox="0 0 85.988 85.987" style="enable-background:new 0 0 85.988 85.987;"
+                                    <svg version="1.1" class="fill-[#0AC0F7] group-hover:scale-[1.2] group-hover:transition-all group-hover:duration-200 group-hover:ease-in-out transition-all duration-200 ease-in-out w-[36px] md:w-[50px] xl:w-[64px]" id="icon_anggotaKelompok" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" viewBox="0 0 85.988 85.987" style="enable-background:new 0 0 85.988 85.987;"
                                         xml:space="preserve">
                                         <g>
                                             <path d="M77.993,30.884c-2.692,0-4.878,2.185-4.878,4.868c0,2.685,2.186,4.867,4.878,4.867
@@ -104,78 +104,83 @@
         <div class="col-span-1"></div>
 
         <!-- Anggota Kelompok -->
-        <div class="beranda col-start-3 col-end-12 block">
+        <div class="beranda col-start-2 col-end-12 block order-1 xl:col-start-3 xl:col-end-12 xl:order-2">
             <div class="konten-anggotaKelompok mt-20">
                 <div class="bagian-konten-anggotaKelompok">
 
                     <div class="judul-anggotaKelompok">
 
-                        <h1 class="text-[3.5rem] text-[#0AC0F7] tracking-[0.625rem] text-center uppercase font-extrabold">Anggota Kelompok</h1>
+                        <h1 class="text-[2rem] xl:text-[3.5rem] text-[#0AC0F7] tracking-[0.625rem] text-center uppercase font-extrabold">Anggota Kelompok</h1>
                     
                         <div class="keterangan-tambahan-judul-anggotaKelompok mt-3">
-                            <p class="text-center text-[#0AC0F7] text-[2.25rem]">ULAR - 4</p>
+                            <p class="text-center text-[#0AC0F7] text-[1.5rem] xl:text-[2.25rem]">ULAR - 4</p>
                         </div>
 
                     </div>
 
                     <div class="detail-anggotaKelompok mt-6 flex flex-wrap align-items-center justify-center">
 
-                        <div class="profil-anggotaKelompok w-1/5 mx-20 my-3">
+                        <div class="profil-anggotaKelompok w-4/5 md:w-3/5 xl:w-1/5 mx-20 my-10 xl:my-3">
     
                             <div class="gambar-anggotaKelompok flex justify-center group">
+                                <!-- <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src="../static/img/AI_Ilham Pandu.JPG" width="220px" alt="Anggota 1"> -->
                                 <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src={{ url_for('static', filename='img/AI_Ilham Pandu.JPG') }} width="220px" alt="Anggota 1">
                             </div>
     
                             <div class="informasi-anggotaKelompok text-center mt-2 group">
-                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="" target="_blank">Ilham Pandu Prasetyo</a></h3>
+                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="https://www.instagram.com/panduu.prstyo/" target="_blank">Ilham Pandu Prasetyo</a></h3>
                             </div>
     
                         </div>
 
-                        <div class="profil-anggotaKelompok w-1/5 mx-20 my-3">
+                        <div class="profil-anggotaKelompok w-4/5 md:w-3/5 xl:w-1/5 mx-20 my-10 xl:my-3">
     
                             <div class="gambar-anggotaKelompok cursor-pointer flex justify-center group">
+                                <!-- <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src="../static/img/AI_Lutfiah Tsani.jpg" width="220px" alt="Anggota 2"> -->
                                 <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src={{ url_for('static', filename='img/AI_Lutfiah Tsani.jpg') }} width="220px" alt="Anggota 2">
                             </div>
     
                             <div class="informasi-anggotaKelompok text-center mt-2 italic group">
-                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="" target="_blank">Lutfiah Tsani</a></h3>
+                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="https://www.instagram.com/itstsani_/" target="_blank">Lutfiah Tsani</a></h3>
                             </div>
     
                         </div>
 
-                        <div class="profil-anggotaKelompok w-1/5 mx-20 my-3">
+                        <div class="profil-anggotaKelompok w-4/5 md:w-3/5 xl:w-1/5 mx-20 my-10 xl:my-3">
     
                             <div class="gambar-anggotaKelompok cursor-pointer flex justify-center group">
+                                <!-- <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src="../static/img/AI_Hafidh Soekma.jpg" width="220px" alt="Anggota 3"> -->
                                 <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src={{ url_for('static', filename='img/AI_Hafidh Soekma.jpg') }} width="220px" alt="Anggota 3">
                             </div>
     
                             <div class="informasi-anggotaKelompok text-center mt-2 italic group">
-                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="" target="_blank">Hafidh Soekma Ardiansyah</a></h3>
+                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="https://www.instagram.com/hafidhsoekma/" target="_blank">Hafidh Soekma Ardiansyah</a></h3>
                             </div>
     
                         </div>
 
-                        <div class="profil-anggotaKelompok w-1/5 mx-20 my-3">
+                        <div class="profil-anggotaKelompok w-4/5 md:w-3/5 xl:w-1/5 mx-20 my-10 xl:my-3">
     
                             <div class="gambar-anggotaKelompok cursor-pointer flex justify-center group">
+                                <!-- <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src="../static/img/AI_Andi Azriel.jpg" width="220px" alt="Anggota 4"> -->
                                 <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src={{ url_for('static', filename='img/AI_Andi Azriel.jpg') }} width="220px" alt="Anggota 4">
                             </div>
     
                             <div class="informasi-anggotaKelompok text-center mt-2 italic group">
-                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="" target="_blank">Muhammad Andi Azriel Akbar</a></h3>
+                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="https://www.instagram.com/azrilzrel/" target="_blank">Muhammad Andi Azriel Akbar</a></h3>
                             </div>
     
                         </div>
 
-                        <div class="profil-anggotaKelompok w-1/5 mx-20 my-3">
+                        <div class="profil-anggotaKelompok w-4/5 md:w-3/5 xl:w-1/5 mx-20 my-10 xl:my-3">
     
                             <div class="gambar-anggotaKelompok cursor-pointer flex justify-center group">
+                                <!-- <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src="../static/img/AI_Zakin Udin.JPG" width="220px" alt="Anggota 5"> -->
                                 <img class="rounded-full transition-all ease-linear duration-200 group-hover:transition-all group-hover:duration-200 group-hover:ease-linear group-hover:shadow-blue-profil" src={{ url_for('static', filename='img/AI_Zakin Udin.JPG') }} width="220px" alt="Anggota 5">
                             </div>
     
                             <div class="informasi-anggotaKelompok text-center mt-2 italic group">
-                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="" target="_blank">Muhammad Zakin Udin</a></h3>
+                                <h3 class="py-2 transition-all duration-300 group-hover:cursor-pointer group-hover:italic rounded-3xl group-hover:w-100 group-hover:bg-[#0AC0F7] group-hover:text-white group-hover:transition-all group-hover:duration-300 group-hover:tracking-wider"><a href="https://www.instagram.com/m_zakin19/" target="_blank">Muhammad Zakin Udin</a></h3>
                             </div>
     
                         </div>
