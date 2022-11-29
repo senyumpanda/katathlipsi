@@ -1,3 +1,14 @@
+import subprocess
+import sys
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    
+install("numpy")
+install("pandas")
+install("joblib")
+install("Flask")
+install("sklearn")
+
 import numpy as np
 import pandas as pd
 import joblib
