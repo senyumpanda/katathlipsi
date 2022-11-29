@@ -1,1 +1,1 @@
-PYTHON_VERSION="3.9"
+pipenv --python3 3.9
