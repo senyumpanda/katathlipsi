@@ -77,7 +77,16 @@
                 "pekerjaan kamu apa?",
                 "lu kerja apa?",
                 "tugas kamu apa?",
-                "tugas lo ngapain?"
+                "tugas lo ngapain?",
+                "ngapain",
+                "ngapain.",
+                "kerja",
+                "kerja.",
+                "pekerjaan kamu",
+                "pekerjaan kamu.",
+                "kamu ngapain",
+                "kamu ngapain.",
+                "kamu ngapain!"
             ],
             "responses": [
                 "InDep berusaha membantu kamu dalam mengatasi Depresi ^_^",
