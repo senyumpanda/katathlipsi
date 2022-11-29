@@ -1,9 +1,4 @@
-numpy 1.23.4
-pandas 1.5.1
-joblib 1.2.0
-Flask 2.2.2
-
-pip install numpy
-pip install pandas
-pip install joblib
-pip install Flask
+numpy==1.23.4
+pandas==1.5.1
+joblib==1.2.0
+Flask==2.2.2
